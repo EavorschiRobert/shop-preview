@@ -25,7 +25,7 @@ const Card = ({ item }) => {
         tiltMaxAngleX={20}
         tiltMaxAngleY={20}
         className={`
-        } pb-4 bg-gradient-to-t from-tertiary to-primary tertiary w-[300px] h-[400px] drop-shadow-md rounded-xl`}
+        } pb-4 bg-gradient-to-t from-tertiary to-primary tertiary w-[300px] h-[450px] drop-shadow-md rounded-xl`}
         //   options={defaultOptions}
       >
         {!isFlipped && (
@@ -43,8 +43,8 @@ const Card = ({ item }) => {
             }`}
           >
             {isFlipped && <p className="text-sm">{item.description}</p>}
-            <div className={`${isFlipped ? 'pt-20 lex gap-4' : 'flex flex-col items-center'}`}>
-              <Link to={"product"} className="hover:text-primary">
+            <div className={`${isFlipped ? 'pt-20 flex gap-4' : 'flex flex-col items-center gap-2'}`}>
+              <Link to={"product"} className="hover:text-primary cursor-pointer">
                 Discover More
               </Link>
               <button

@@ -12,7 +12,7 @@ const Topbar = () => {
   };
 
   return (
-    <div className="bg-primary/80 w-full fixed z-40">
+    <header className="bg-primary/80 w-full fixed z-40">
       <div className=" flex w-full justify-between px-8 py-4 ">
         <div className="flex items-center gap-3">
           <img src={logo} alt="logo" className="w-12 rounded-full" />
@@ -50,7 +50,7 @@ const Topbar = () => {
           </AnimatePresence>
         )}
       </AnimatePresence>
-    </div>
+    </header>
   );
 };
 
