@@ -1,0 +1,1 @@
+export const location = process.env.REACT_APP_LOCATION;

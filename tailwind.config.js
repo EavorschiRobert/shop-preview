@@ -16,6 +16,11 @@ export default {
         secondary: '#EADBC8',
         tertiary: '#DAC0A3',
         action: '#102C57'
+      },
+      backgroundImage: {
+        'home': "url('/public/store/out-1.jpg')",
+        'home-png': "url('/public/images/Opera_senza_titolo-1.png')",
+        'food': "url('/public/images/IMG_0898.JPG')"
       }
     },
   },

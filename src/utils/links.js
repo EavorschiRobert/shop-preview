@@ -4,11 +4,16 @@ export const links = [
     name: 'Home'
   },
   {
-    link: 'menu',
-    name: 'Menu'
+    link: 'gallery',
+    name: 'Gallery'
   },
   {
     link: 'contact',
     name: 'Contact us'
   },
+  {
+    link: 'product',
+    name: 'Products'
+  },
+
 ]
