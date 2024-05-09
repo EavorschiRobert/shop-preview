@@ -4,11 +4,15 @@ import Footer from "./Footer";
 import { faEnvelope, faPhone, faLocationDot } from "../utils/icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { CircularProgress, TextField } from "@mui/material";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-
+import alias from "../../public/images/sapiens.png";
+import baloon from "../../public/images/kisspng-portable-network-graphics-speech-balloon-clip-art-speech-balloon-png-icon-png-repo-free-png-icons-5ce9aea1e3cee9.9952346315588184659331.png";
+import { useInView, motion } from "framer-motion";
 const Contact = () => {
+  const image = useRef();
+  const isInView = useInView(image);
   const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -38,7 +42,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Robert",
           from_email: form.email,
-          to_email: "eavorschirobertdaniel@gmail.com",
+          to_email: "Dimitratvd@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLICKEY
@@ -46,16 +50,15 @@ const Contact = () => {
       .then(() => {
         setIsLoading(false);
         notifySuccess();
-        setForm(
-          {
-            name: "",
-            email: "",
-            message: "",
-          }
-        );
-      }).catch(error => {
-            console.log(error);
-            notifyError();
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        notifyError();
       });
   };
   return (
@@ -111,7 +114,7 @@ const Contact = () => {
               <h1 className="font-bold">INFO</h1>
               <div className="flex gap-2 items-center">
                 <FontAwesomeIcon icon={faEnvelope} />
-                <p>dlalousi8@gmail.com</p>
+                <p>Dimitratvd@gmail.com</p>
               </div>
               <div className="flex gap-2 items-center">
                 <FontAwesomeIcon icon={faPhone} />
@@ -131,6 +134,17 @@ const Contact = () => {
           </div>
           <div className=" bg-secondary w-1/2 h-full"></div>
         </div>
+      </div>
+      <div>
+        <motion.img
+          ref={image}
+          initial={{ x: "-200px", opacity: 0 }}
+          animate={{ x: "0", opacity: 1 }}
+          transition={{ duration: 2, type: "tween" }}
+          src={alias}
+          alt="alias"
+          className="absolute z-40 w-1/3 bottom-[-30px]"
+        />
       </div>
       <Footer />
     </>
