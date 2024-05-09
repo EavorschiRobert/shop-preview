@@ -5,7 +5,7 @@ import logo from "../../public/images/7841103.jpg";
 import {faFacebook, faInstagram, faPhone} from '../utils/icons'
 const Footer = () => {
   return (
-    <div className='bg-action text-primary h-1/3 flex justify-between py-8 px-4'>
+    <div className='bg-action text-primary flex justify-between py-8 px-4'>
       <div>
       <div className='flex gap-4 '>
       <FontAwesomeIcon icon={faPhone} />
