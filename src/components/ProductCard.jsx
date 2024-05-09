@@ -16,7 +16,7 @@ const ProductCard = ({ item }) => {
       </div>
 
       <div className="flex flex-col h-1/4 items-center justify-center ">
-        <h2 className="text-center font-bold ">{item.title}</h2>zuchini
+        <h2 className="text-center font-bold ">{item.title}</h2>
         <div>€{item.price}/kg</div>
       </div>
     </div>

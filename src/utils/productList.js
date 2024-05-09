@@ -29,4 +29,16 @@ export const products = [
     price: 2.45,
     imageUrl: "../../public/product/pexels-enginakyurt-1460862.jpg",
   },
+  {
+    title: "Red Bull",
+    category: "drink",
+    price: 2.45,
+    imageUrl: "../../public/product/pexels-rubaitulazad-17220095.jpg",
+  },
+  {
+    title: "Coca Cola",
+    category: "drink",
+    price: 2.45,
+    imageUrl: "../../public/product/pexels-olenkabohovyk-3819969.jpg",
+  },
 ];
