@@ -1,7 +1,5 @@
-import React from 'react'
-import Contacts from './home/Contacts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo from "../../public/images/7841103.jpg";
+import logo from "../../public/assets/WhatsApp Image 2024-05-09 at 16.52.25.jpeg";
 import {faFacebook, faInstagram, faPhone} from '../utils/icons'
 const Footer = () => {
   return (
