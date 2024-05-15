@@ -11,7 +11,7 @@ const Card = ({ item, index }) => {
       ref={ref}
       initial={{ x: "-100%", opacity: 0 }}
       animate={{ x: isInView ? 0 : "-100%", opacity: isInView ? 1 : 0 }}
-      transition={{ duration: 2, delay: 0.3 * index }}
+      transition={{ duration: 1, delay: 0.3 * index }}
       key={index}
     >
       <Tilt
