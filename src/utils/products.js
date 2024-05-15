@@ -1,3 +1,3 @@
 export const filterCategory = [
-    'care', 'drink','clean','food', 'all'
+    'self care', 'drink','clean','food', 'all'
 ]

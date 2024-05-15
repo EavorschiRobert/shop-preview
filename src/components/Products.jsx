@@ -8,6 +8,7 @@ import SearchBar from "./Filter/SearchBar";
 
 const Products = () => {
   const { category } = useParams();
+  console.log(category)
   const [filter, setFilter] = useState(category || "");
   const [search, setSearch] = useState("");
   const [data, setData] = useState(products);
