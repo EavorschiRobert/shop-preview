@@ -5,6 +5,7 @@ import Shop from "./Shop";
 import Footer from "../Footer";
 
 const Home = () => {
+
   return (
     <>
       <div className="w-full h-3/4 flex gap-4 px-4 pt-20">

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../public/assets/WhatsApp Image 2024-05-09 at 16.52.25.jpeg";
-import { faBars, faCaretDown } from "../utils/icons";
+import { faCaretDown } from "../utils/icons";
 import { useState } from "react";
 import Links from "./Links";
 import { AnimatePresence, motion } from "framer-motion";

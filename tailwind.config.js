@@ -18,9 +18,9 @@ export default {
         action: '#102C57'
       },
       backgroundImage: {
-        'home': "url('/public/store/out-1.jpg')",
-        'home-png': "url('/public/images/Opera_senza_titolo-1.png')",
-        'food': "url('/public/images/IMG_0898.JPG')"
+        'home': "url('/assets/out-1.jpg')",
+        'home-png': "url('/assets/Opera_senza_titolo-1.png')",
+        'food': "url('/assets/IMG_0898.JPG')"
       }
     },
   },

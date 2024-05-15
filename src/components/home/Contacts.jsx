@@ -19,7 +19,7 @@ const Contacts = () => {
       </div>
       <div className="flex gap-2">
         <FontAwesomeIcon icon={faPhone} />
-        <p>+30 2754 041580</p>
+        
       </div>
     </div>
   );
