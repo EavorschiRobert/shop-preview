@@ -7,8 +7,6 @@ import { CircularProgress, TextField } from "@mui/material";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import alias from "../../public/images/sapiens.png";
-import baloon from "../../public/images/kisspng-portable-network-graphics-speech-balloon-clip-art-speech-balloon-png-icon-png-repo-free-png-icons-5ce9aea1e3cee9.9952346315588184659331.png";
 import { useInView, motion } from "framer-motion";
 const Contact = () => {
   const image = useRef();
@@ -134,17 +132,6 @@ const Contact = () => {
           </div>
           <div className=" bg-secondary w-1/2 h-full"></div>
         </div>
-      </div>
-      <div>
-        <motion.img
-          ref={image}
-          initial={{ x: "-200px", opacity: 0 }}
-          animate={{ x: "0", opacity: 1 }}
-          transition={{ duration: 2, type: "tween" }}
-          src={alias}
-          alt="alias"
-          className="absolute z-40 w-1/3 bottom-[-30px]"
-        />
       </div>
       <Footer />
     </>
