@@ -28,7 +28,7 @@ const Card = ({ item, index }) => {
           <h1 className="font-bold text-xl"> {item.title}</h1>
           <p>{item.description}</p>
           <Link
-            to={`/product/${item.category}`}
+            to={`/product/${item.foodCategory.category}`}
             className="font-bold text-action hover:text-tertiary pt-2"
           >
             Discover More...
