@@ -4,13 +4,10 @@ import Footer from "./Footer";
 import { faEnvelope, faPhone, faLocationDot } from "../utils/icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { CircularProgress, TextField } from "@mui/material";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import { useInView, motion } from "framer-motion";
 const Contact = () => {
-  const image = useRef();
-  const isInView = useInView(image);
   const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
