@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="w-screen h-screen bg-primary">
       <Topbar />
-      <CookieConsent
+      {/* <CookieConsent
         location="bottom"
         buttonText="Agree"
         enableDeclineButton
@@ -17,7 +17,7 @@ const App = () => {
         expires={150}
       >
         This website uses cookies to enhance the user experience.{" "}
-      </CookieConsent>
+      </CookieConsent> */}
       <ToastContainer
         position="top-right"
         autoClose={5000}
