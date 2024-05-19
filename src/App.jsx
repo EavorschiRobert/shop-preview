@@ -17,7 +17,6 @@ const App = () => {
         expires={150}
       >
         This website uses cookies to enhance the user experience.{" "}
-        <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
       </CookieConsent>
       <ToastContainer
         position="top-right"
